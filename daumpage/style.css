@@ -1,0 +1,60 @@
+header {
+    margin: 0px 150px;
+    padding-left: 100px;
+}
+
+#start_page {	
+    position: relative;
+	bottom: 80px;
+	left: 0px;
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+}
+#start_page:hover {
+    color: #0099FF;
+    text-decoration: underline;
+}
+
+#logo {
+    position: relative;
+    top: 30px;
+    right: 170px;
+}
+#logo img {
+    width: 200px;
+}
+
+#search {
+    position: relative;
+    bottom: 20px;
+    right: 170px;
+    width: 500px;
+    height: 40px;
+    outline: none;
+    border-color: #0099FF;
+    border-width: 1px;
+}
+
+.fa-search {
+    position: relative;
+    bottom: 20px;
+    right: 210px;
+    color: #0099FF;
+}
+
+#bottom_search {
+    position: relative;
+    left: 110px;
+    bottom: 30px;
+}
+#bottom_search li {
+   list-style: none;
+   padding-left: 10px;
+   display: inline;
+}
+#bottom_search li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: gray;
+}
