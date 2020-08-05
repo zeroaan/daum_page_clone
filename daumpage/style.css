@@ -1,6 +1,6 @@
 header {
     margin: 0px 150px;
-    padding-left: 100px;
+    padding-left: 130px;
 }
 
 #start_page {	
@@ -19,7 +19,7 @@ header {
 #logo {
     position: relative;
     top: 30px;
-    right: 170px;
+    right: 175px;
 }
 #logo img {
     width: 200px;
@@ -45,7 +45,7 @@ header {
 
 #bottom_search {
     position: relative;
-    left: 110px;
+    left: 120px;
     bottom: 30px;
 }
 #bottom_search li {
@@ -57,4 +57,14 @@ header {
     text-decoration: none;
     font-size: 12px;
     color: gray;
+}
+
+#lr_button {
+    position: relative;
+    left: 623px;
+    bottom: 68px;
+    color: silver;
+}
+#lr_button a{
+    color: silver;
 }
