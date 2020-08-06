@@ -1,12 +1,13 @@
 header {
+    position: relative;
     margin: 0px 150px;
     padding-left: 130px;
+    padding-bottom: 30px;
+    border: solid;
 }
 
-#start_page {	
+#start_page {
     position: relative;
-	bottom: 80px;
-	left: 0px;
     color: gray;
     text-decoration: none;
     font-size: 12px;
@@ -17,9 +18,9 @@ header {
 }
 
 #logo {
-    position: relative;
-    top: 30px;
-    right: 175px;
+    position: absolute;
+    top: 33px;
+    left: 80px;
 }
 #logo img {
     width: 200px;
@@ -27,8 +28,8 @@ header {
 
 #search {
     position: relative;
-    bottom: 20px;
-    right: 170px;
+    top:60px;
+    left:30px;
     width: 500px;
     height: 40px;
     outline: none;
@@ -37,34 +38,37 @@ header {
 }
 
 .fa-search {
-    position: relative;
-    bottom: 20px;
-    right: 210px;
+    position: absolute;
+    top:75px;
     color: #0099FF;
 }
 
-#bottom_search {
+.bottom_search {
     position: relative;
-    left: 120px;
-    bottom: 30px;
+    top:50px;
+    left:115px;
 }
-#bottom_search li {
+.bottom_search li {
    list-style: none;
    padding-left: 10px;
    display: inline;
 }
-#bottom_search li a {
+.bottom_search li a {
     text-decoration: none;
     font-size: 12px;
     color: gray;
 }
-
-#lr_button {
-    position: relative;
-    left: 623px;
-    bottom: 68px;
-    color: silver;
+.bottom_search li a:hover {
+    text-decoration: underline;
 }
-#lr_button a{
+
+#slide {
+    position: relative;
+    top:13px;
+    left:620px;
+    user-select: none;
+}
+.prev, .next {
+    cursor: pointer;
     color: silver;
 }

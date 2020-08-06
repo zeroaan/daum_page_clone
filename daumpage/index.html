@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daum</title>
     <script src="https://kit.fontawesome.com/f8aeef902d.js" crossorigin="anonymous"></script>
-    <script defer src='main.js'></script>
+    <script defer src='slide.js'></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,22 +15,22 @@
 
         <input id="search" type="text">
         <a href=""><i class="fas fa-search"></i></a>
-
-        <ul id="bottom_search">
+        
+        <ul class="bottom_search">
             <li><a href="">코로나 발생현황</a></li>
             <li><a href="">장마</a></li>
             <li><a href="">생활속 거리두기</a></li>
             <li><a href="">카카오</a></li>
             <li><a href="">기상특보</a></li>
         </ul>
-        <ul id="bottom_search">
+        <ul class="bottom_search">
             <li><a href="">프로그래밍</a></li>
             <li><a href="">C 언어</a></li>
             <li><a href="">자바스크립트</a></li>
             <li><a href="">Python</a></li>
-            <li><a href="">html, css</a></li>
+            <li><a href="">html css</a></li>
         </ul>
-        <ul id="bottom_search">
+        <ul class="bottom_search">
             <li><a href="">대한민국</a></li>
             <li><a href="">2020년 8월</a></li>
             <li><a href="">오늘 나의 운세는?</a></li>
@@ -38,10 +38,10 @@
             <li><a href="">손흥민</a></li>
         </ul>
 
-        <div id="lr_button">
-            <a href="" onclick="plusSlides(-1)"><i class="far fa-caret-square-left"></i></a>
-            <a href="" onclick="plusSlides(1)"><i class="far fa-caret-square-right"></i></a>
-        </div>
+        <div id='slide'>
+            <a class="prev" onclick="moveSlides(-1)"><i class="far fa-caret-square-left"></i></a>
+            <a class="next" onclick="moveSlides(1)"><i class="far fa-caret-square-right"></i></a>
+        </div>    
     </header>
 
     <nav><!--
