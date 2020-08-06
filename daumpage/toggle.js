@@ -1,5 +1,5 @@
 // 더보기 토글
-document.querySelector('#navbar-toggle').addEventListener('click', function() {
+document.querySelector('.navbar-toggle').addEventListener('click', function() {
     document.querySelector('.navbar.hidden').classList.toggle('collapsed');
 });
 
