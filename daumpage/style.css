@@ -1,10 +1,17 @@
 header {
     position: relative;
-    margin: 0px 150px;
+    margin: 10px 150px;
     padding-left: 130px;
     padding-bottom: 30px;
-    border: solid;
 }
+nav {
+    display: flex;
+    position: relative;
+    margin: 10px 150px;
+    padding-left: 130px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 #start_page {
     position: relative;
@@ -30,7 +37,7 @@ header {
     position: relative;
     top:60px;
     left:30px;
-    width: 500px;
+    width: 530px;
     height: 40px;
     outline: none;
     border-color: #0099FF;
@@ -50,7 +57,7 @@ header {
 }
 .bottom_search li {
    list-style: none;
-   padding-left: 10px;
+   padding-left: 15px;
    display: inline;
 }
 .bottom_search li a {
@@ -64,11 +71,113 @@ header {
 
 #slide {
     position: relative;
-    top:13px;
-    left:620px;
+    top: 13px;
+    left: 655px;
     user-select: none;
 }
 .prev, .next {
     cursor: pointer;
     color: silver;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#hr1 {
+    position: relative;
+    top: 15px;
+    background-color: silver;
+    height: 0.07px;
+    border: 0px;
+}
+#hr2 {
+    position: relative;
+    top: -40px;
+    background-color: black;
+    height: 0.07px;
+    border: 0px;
+}
+
+#navibar {
+    position: relative;
+    left: -57px;
+    user-select: none;
+}
+#navibar li {
+   list-style: none;
+   padding-left: 13px;
+   display: inline;
+   font-size: 12px;
+   color: black;
+   font-weight: bold;
+}
+#navibar li a {
+    text-decoration: none;
+}
+#navibar li a:visited {
+    color: black;
+    text-decoration: none;
+}
+#navibar li a:hover {
+    text-decoration: none;
+}
+
+#weather {
+   display: flex;
+   position: relative;
+   left: 55px;
+   font-weight: bold;
+}
+
+#place {
+    position: relative;
+    left: -20px;
+}
+#place li {
+   list-style: none;
+   font-size: 15px;
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   position: relative;
+   top: 2px;
+}
+
+
+/*@@@@@@@@@@@*/
+.navbar {
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+    top: 53px;
+    left: 125px;
+    height: 250px;
+    width: 680px;
+}
+.navbar.collapsed {
+    max-height: 250px;
+    border: solid;
+}
+#navbar-toggle {
+    cursor: pointer;
+}
+
+.temp {
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+    top: 37px;
+    left: -125px;
+    height: 155px;
+    width: 285px;
+}
+.temp.collapsed {
+    max-height: 250px;
+    border: solid;
+}
+#temp-toggle {
+    cursor: pointer;
+    position: relative;
+    top: -24px;
+    left: -12px;
+    width: 130px;
+    height: 30px;
 }

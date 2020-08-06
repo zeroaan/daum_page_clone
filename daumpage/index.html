@@ -6,6 +6,7 @@
     <title>Daum</title>
     <script src="https://kit.fontawesome.com/f8aeef902d.js" crossorigin="anonymous"></script>
     <script defer src='slide.js'></script>
+    <script defer src='toggle.js'></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -43,20 +44,44 @@
             <a class="next" onclick="moveSlides(1)"><i class="far fa-caret-square-right"></i></a>
         </div>    
     </header>
+    <hr id="hr1">
+    <nav>
+        <ul id="navibar">
+            <li><a href="">카페</a></li>
+            <li><a href="">메일</a></li>
+            <li><a href="">뉴스</a></li>
+            <li><a href="">지도</a></li>
+            <li><a href="">증권</a></li>
+            <li><a href="">쇼핑</a></li>
+            <li><a href="">카카오TV</a></li>
+            <li><a href="">웹툰</a></li>
+            <li><a href="">블로그</a></li>
+            <li><a href="">브런치</a></li>
+            <li><a href="">사전</a></li>
+            <li><a href="">게임</a></li>
+            <li><a href="">같이가치</a></li>
+            <li id="navbar-toggle">더보기</li>
+        </ul>
+        <div class="navbar hidden">ㅋㅋㅋㅋㅋㅋㅋ</div>
 
-    <nav><!--
-        <ul id="navbar">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>-->
+        <div id="weather">
+            <p>08. 06. (목)</p>
+            <ul id="place">
+                <li class="tem">서울시 <i class="fas fa-umbrella"></i> 26℃</li>
+                <li class="tem">강원도 <i class="fas fa-umbrella"></i> 25℃</li>
+                <li class="tem">경기도 <i class="fas fa-umbrella"></i> 22℃</li>
+                <li class="tem">충청도 <i class="fas fa-umbrella"></i> 19℃</li>
+                <li class="tem">전라도 <i class="fas fa-umbrella"></i> 21℃</li>
+                <li class="tem">경상도 <i class="fas fa-umbrella"></i> 28℃</li>
+                <li class="tem">제주도 <i class="fas fa-umbrella"></i> 24℃</li>
+                <div id="temp-toggle"></div>
+                <div class="temp hidden">오늘 제주의 날씨는 비옴</div>
+            </ul>
+        </div>
     </nav>
-
+    <hr id="hr2">
     <section>
         <article>
-
         </article>
 
     </section>
