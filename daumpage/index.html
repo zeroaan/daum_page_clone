@@ -7,7 +7,6 @@
     <script src="https://kit.fontawesome.com/f8aeef902d.js" crossorigin="anonymous"></script>
     <script defer src='slide.js'></script>
     <script defer src='toggle.js'></script>
-    <script defer src='text_color.js'></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -61,9 +60,87 @@
             <li><a href="">사전</a></li>
             <li><a href="">게임</a></li>
             <li><a href="">같이가치</a></li>
-            <li class="navbar-toggle down">더보기 <i class="fas fa-angle-down"></i></li>
+            <li class="navbar-toggle">더보기 <i class="fas fa-angle-down"></i></li>
         </ul>
-        <div class="navbar hidden">ㅋㅋㅋㅋㅋㅋㅋ</div>
+        <div class="navbar hidden">
+            <table>
+                <td>
+                    <ul id="hidden a">
+                        <li><b>커뮤니케이션</b></li>
+                        <li><a href="">메일</a></li>
+                        <li><a href="">카페</a></li>
+                        <li><a href="">블로그</a></li>
+                        <li><a href="">티스토리</a></li>
+                        <li><a href="">브런치</a></li>
+                        <li><a href="">아지트</a></li>
+                        <li><a href="">카카오스토리</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul id="hidden b">
+                        <li><b>미디어</b></li>
+                        <li><a href="">뉴스</a></li>
+                        <li><a href="">스포츠</a></li>
+                        <li><a href="">연예</a></li>
+                        <li><a href="">레이지</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul id="hidden c">
+                        <li><b>쇼핑/생활</b></li>
+                        <li><a href="">쇼핑하우</a></li>
+                        <li><a href="">항공권</a></li>
+                        <li><a href="">금융</a></li>
+                        <li><a href="">부동산</a></li>
+                        <li><a href="">자동차</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul id="hidden d">
+                        <li><b>문화/엔터</b></li>
+                        <li><a href="">멜론</a></li>
+                        <li><a href="">영화</a></li>
+                        <li><a href="">다음웹툰</a></li>
+                        <li><a href="">카카오TV</a></li>
+                        <br>
+                        <li><b>쇼셜임팩트</b></li>
+                        <li><a href="">같이가치</a></li>
+                        <li><a href="">메이커스</a></li>
+                        <li><a href="">프로젝트100</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul id="hidden e">
+                        <li><b>사전/지식</b></li>
+                        <li><a href="">어학사전</a></li>
+                        <li><a href="">번역</a></li>
+                        <li><a href="">단어장</a></li>
+                        <li><a href="">백과사전</a></li>
+                        <br>
+                        <li><b><a href="">게임</a> <i class="fas fa-angle-right"></i></b></li>
+                        <li><a href="">배틀그라운드</a></li>
+                        <li><a href="">패스 엑자일</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul id="hidden f">
+                        <li><b>지도</b></li>
+                        <li><a href="">검색</a></li>
+                        <li><a href="">버스정보</a></li>
+                        <li><a href="">로드뷰</a></li>
+                        <li><a href="">지하철노선도</a></li>
+                        <br>
+                        <li><b><a href="">카카오 소식</a> <i class="fas fa-angle-right"></i></b></li>
+                        <li><a href="">카카오 AI</a></li>
+                    </ul>
+                </td>
+            </table>
+
+            <div>
+                <a class="nb_exit a" href="">서비스 전체보기 <b>‣</b></a>
+                <a class="nb_exit b" href="">닫기</a>
+            </div>
+        </div>
 
         <div id="weather">
             <p>08. 06. (목)</p>
@@ -76,7 +153,18 @@
                 <li class="tem">경상도 <i class="fas fa-umbrella"></i> 28℃ <i class="fas fa-angle-down"></i></li>
                 <li class="tem">제주도 <i class="fas fa-umbrella"></i> 24℃ <i class="fas fa-angle-down"></i></li>
                 <div id="temp-toggle"></div>
-                <div class="temp hidden">오늘 제주의 날씨는 비옴</div>
+                <div class="temp hidden">
+                    <p id="current">성남시 분당구</p>
+                    <p id="X">×</p>
+                    <i id="wt_icon" class="fas fa-cloud-sun-rain"></i>
+                    <p id="wt_tem">23℃</p>
+                    <p id="yester">어제보다 1℃ 낮음</p>
+                    <div id="air">
+                        <p>미세먼지</p><p style="color:blue">좋음</p>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <p>통합대기</p><p style="color:blue">좋음</p>
+                    </div>
+                </div>
             </ul>
         </div>
     </nav>

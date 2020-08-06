@@ -146,14 +146,14 @@ nav {
     position: absolute;
     overflow: hidden;
     max-height: 0;
-    top: 51px;
+    top: 50px;
     left: 125px;
     height: 250px;
     width: 640px;
 }
 .navbar.collapsed {
     max-height: 250px;
-    border: solid;
+    border: 1px solid rgb(150, 150, 150);
 }
 .navbar-toggle {
     cursor: pointer;
@@ -163,14 +163,14 @@ nav {
     position: absolute;
     overflow: hidden;
     max-height: 0;
-    top: 33px;
+    top: 32px;
     left: -118px;
     height: 160px;
     width: 280px;
 }
 .temp.collapsed {
     max-height: 250px;
-    border: solid;
+    border: 1px solid rgb(150, 150, 150);
 }
 #temp-toggle {
     cursor: pointer;
@@ -179,4 +179,98 @@ nav {
     left: -12px;
     width: 140px;
     height: 30px;
+}
+
+/* @@@@@@@@@@@@@@@@@ */
+
+.navbar.hidden {
+    font-size: 12px;
+}
+.navbar.hidden table {
+    border-collapse : collapse;
+}
+.navbar.hidden table td{
+    width: 110px;
+    border: 1px solid rgb(235, 235, 235);
+}
+.navbar.hidden ul {
+    position: absolute;
+    display: inline-block;
+    padding: 0px 18px 0px 18px;
+    margin-top: 10px;
+    margin-left: -8px;
+}
+.navbar.hidden ul li {
+    list-style: none;
+    padding-bottom: 4px;
+    
+}
+.navbar.hidden ul li a {
+    text-decoration: none;
+}
+.navbar.hidden ul li a:visited {
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+}
+.navbar.hidden ul li a:hover {
+    text-decoration: none;
+}
+
+.nb_exit.a {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+}
+.nb_exit.b {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+.nb_exit {
+    text-decoration: none;
+}
+.nb_exit:visited {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+.nb_exit:hover {
+    text-decoration: underline;
+}
+
+/* @@@@@@@@@@@@@@@@2 */
+
+#current {
+    padding-left: 30px;
+}
+#X {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    font-size: 30px;
+
+}
+#wt_icon {
+    position: relative;
+    left: 40px;
+    font-size: 60px;
+}
+#wt_tem {
+    position: absolute;
+    top: 13px;
+    left: 160px;
+    font-size: 30px;
+}
+#yester {
+    position: relative;
+    top: -30px;
+    left: 140px;
+}
+#air {
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    padding-left: 22px;
+}
+#air p{
+    margin-left: 10px;
 }
