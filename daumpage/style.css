@@ -190,6 +190,8 @@ section {
 
 .navbar.hidden {
     font-size: 12px;
+    z-index: 1;
+    background-color: white;
 }
 .navbar.hidden table {
     border-collapse : collapse;
@@ -244,15 +246,20 @@ section {
 
 /* @@@@@@@@@@@@@@@@2 */
 
+.temp.hidden {
+    z-index: 1;
+    background-color: white;
+}
 #current {
     padding-left: 30px;
 }
 #X {
     position: absolute;
-    top: -30px;
+    top: 3px;
     right: 20px;
-    font-size: 30px;
-
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
 }
 #wt_icon {
     position: relative;
@@ -297,7 +304,7 @@ section {
 #log {
     position: absolute;
     top: -20px;
-    right: 150px;
+    right: 145px;
     background-color: rgb(245, 245, 245);
     border-radius: 3px;
     border: 1px solid rgb(235, 235, 235);
