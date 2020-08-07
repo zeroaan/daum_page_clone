@@ -14,7 +14,14 @@ section {
     position: relative;
     margin: 10px 150px;
     padding-left: 130px;
-
+    margin-right: 590px;
+}
+aside {
+    position: relative;
+    top: -135px;
+    left: 790px;
+    margin: 10px 150px;
+    width: 380px;
 }
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -213,10 +220,10 @@ section {
     
 }
 .navbar.hidden ul li a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 .navbar.hidden ul li a:visited {
-    color: rgb(100, 100, 100);
     text-decoration: none;
 }
 .navbar.hidden ul li a:hover {
@@ -232,6 +239,11 @@ section {
     position: absolute;
     right: 15px;
     bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nb_exit.b:hover {
+    text-decoration: none;
 }
 .nb_exit {
     text-decoration: none;
@@ -249,9 +261,10 @@ section {
 .temp.hidden {
     z-index: 1;
     background-color: white;
+    width: 265px;
 }
 #current {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 #X {
     position: absolute;
@@ -260,29 +273,30 @@ section {
     font-size: 25px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 #wt_icon {
     position: relative;
-    left: 40px;
+    left: 30px;
     font-size: 60px;
     color: rgb(153, 153, 153);
 }
 #wt_tem {
     position: absolute;
     top: 13px;
-    left: 160px;
+    left: 148px;
     font-size: 30px;
 }
 #yester {
     position: relative;
     top: -30px;
-    left: 140px;
+    left: 125px;
 }
 #air {
     display: flex;
     position: absolute;
     bottom: 5px;
-    padding-left: 22px;
+    padding-left: 14px;
 }
 #air p{
     margin-left: 10px;
@@ -290,9 +304,13 @@ section {
 
 /* @@@@@@@@@@@@@@@@@@@@@@ */
 
+#section01 {
+    display: flex;
+}
+
 .adver {
     position: relative;
-    top: -20px;
+    top: -25px;
     width: 630px;
     height: 120px;
 }
@@ -302,9 +320,9 @@ section {
 }
 
 #log {
-    position: absolute;
-    top: -20px;
-    right: 145px;
+    position: relative;
+    top: -21px;
+    left: 16px;
     background-color: rgb(245, 245, 245);
     border-radius: 3px;
     border: 1px solid rgb(235, 235, 235);
