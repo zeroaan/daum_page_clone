@@ -40,8 +40,8 @@
         </ul>
 
         <div id='slide'>
-            <a class="prev" onclick="moveSlides(-1)"><i class="far fa-caret-square-left"></i></a>
-            <a class="next" onclick="moveSlides(1)"><i class="far fa-caret-square-right"></i></a>
+            <a class="sli prev" onclick="moveSlides(-1)"><i class="far fa-caret-square-left"></i></a>
+            <a class="sli next" onclick="moveSlides(1)"><i class="far fa-caret-square-right"></i></a>
         </div>    
     </header>
     <hr id="hr1">
@@ -191,15 +191,168 @@
             <a class="login kakao" href=""><i class="fas fa-comment"></i> 카카오계정으로 로그인</a>
             <a id="signup" href="">회원가입</a>
         </div>
-        <div id="side_ad">
-            <a id="itm" href=""></a>
+
+        <div class="side_ad">
+            <a class="itm" href=""></a>
             <img src="/img/sidead01.png" alt="SIDEAD_01">
-            <p id="item_t"><b>[닥터자르트] 바이탈<br> 캡슐앰플 단독세트</b></p>
-            <p id="item_o">177,000원</p>
-            <p id="item_h"><b>59,800원</b></p>
-            <p id="item_j">item.gmarket.co.kr/</p>
+            <p class="item_t"><b>[닥터자르트] 바이탈<br> 캡슐앰플 단독세트</b></p>
+            <p class="item_o">177,000원</p>
+            <p class="item_h"><b>59,800원</b></p>
+            <p class="item_j">item.gmarket.co.kr</p>
+        </div>
+        <div class="side_ad">
+            <a class="itm" href=""></a>
+            <img src="/img/sidead02.png" alt="SIDEAD_02">
+            <p class="item_t"><b>[피톤치드] 고급형<br> 물걸레 청소포 8팩</b></p>
+            <p class="item_o">20,900원</p>
+            <p class="item_h"><b>9,900원</b></p>
+            <p class="item_j">item.gmarket.co.kr</p>
+        </div>
+        <div class="side_ad">
+            <a class="itm" href=""></a>
+            <img src="/img/sidead03.png" alt="SIDEAD_03">
+            <p class="item_t"><b>[우아쥬르] 곰팡이<br> 뿌리채 잡는 제거제</b></p>
+            <p class="item_o">32,000원</p>
+            <p class="item_h"><b>11,900원</b></p>
+            <p class="item_j">livingpick.com/shop</p>
+        </div>
+
+        <div class="side_ad2">
+            <a id="shopping" href="">쇼핑 <i class="fas fa-angle-right"></i></a>
+            <a class="shopping2" href=""><i id="sp1" class="fab fa-opera"></i> GS샵</a>
+            <a class="shopping2" href=""><i id="sp2" class="fab fa-wpressr"></i> 위메프</a>
+            <p class="brand"><a href="">G마켓</a> · <a href="">옥션</a> · <a href="">하프클럽</a>
+                 · <a href="">11번가</a> · <a href="">쿠팡이츠</a></p>
+            <p class="brand"><a href="">패션플러스</a> · <a href="">깔끔대장</a> · <a href="">캔마트</a>
+                · <a href="">마이더스비</a></p>
+            <p class="brand"><a href="">에이블루</a> · <a href="">아이스탁몰</a> · <a href="">메이블루</a>
+                · <a href="">이랜드몰</a></p>
+            <p id="brand_num">1/9
+                <a class="slibrand prev" onclick=""><i class="far fa-caret-square-left"></i></a>
+                <a class="slibrand next" onclick=""><i class="far fa-caret-square-right"></i></a>
+            </p>
+            
+            <a class="brand_img" href="">
+                <img src="/img/brand01.png" alt="BRAND_01">
+                <p>SALE 인기폭발<br>입어보면 알아요</p>
+            </a>
+            <a class="brand_img" href="">
+                <img src="/img/brand02.png" alt="BRAND_02">
+                <p>청순 여름원피스<br>시즌오프 74% ↓</p>
+            </a>
+            <a class="brand_img" href="">
+                <img src="/img/brand03.png" alt="BRAND_03">
+                <p>패션+향균+쿨링<br>모든것이 완벽해</p>
+            </a>
+            <a class="brand_img" href="">
+                <img src="/img/brand04.png" alt="BRAND_04">
+                <p>이 신발 하나로<br>모든 걱정 끝~</p>
+            </a>
+            <a class="brand_img" href="">
+                <img src="/img/brand05.png" alt="BRAND_05">
+                <p>네파 66% ↓<br>7만→2만원대~</p>
+            </a>
+            <a class="brand_img" href="">
+                <img src="/img/brand06.png" alt="BRAND_06">
+                <p>세련된 일상룩<br>모두들 예쁘대</p>
+            </a>
+            <a class="brand_img" href="">
+                <img src="/img/brand07.png" alt="BRAND_07">
+                <p>브랜드퀄리티~!<br>리본스트랩 치마</p>
+            </a>
+            <a class="brand_img" href="">
+                <img src="/img/brand08.png" alt="BRAND_08">
+                <p>100만개 돌파!<br>온라인단독최저가</p>
+            </a>
+            <a class="brand_img" href="">
+                <img src="/img/brand09.png" alt="BRAND_09">
+                <p>남다른 인기 1위<br>~90% ↓ 빅세일</p>
+            </a>
         </div>
     </aside>
+
+
+    <section id="section02">
+        <ul>
+            <li><a href="">뉴스</a></li>
+            <li><a href="">연예</a></li>
+            <li><a href="">스포츠</a></li>
+            <li><a href="">영화</a></li>
+            <li><a href="">자동차</a></li>
+            <li><a href="">부동산</a></li>
+        </ul>
+        <p id="news_num">1/6 
+            <a class="slinews prev" onclick=""><i class="far fa-caret-square-left"></i></a>
+            <a class="slinews next" onclick=""><i class="far fa-caret-square-right"></i></a>
+        </p>
+
+        <article class="news">
+            <a href="">
+                <img src="/img/news01.png" alt="NEWS_01">
+                <p>'부산행'에서 '반도'까지..<br>연상호 앞에 놓인...</p>
+            </a>
+        </article>
+        <article class="news">
+            <a href="">
+                <img src="/img/news02.png" alt="NEWS_02">
+                <p>'놀면 뭐하니' 싹쓰리 음방<br>대기실 플렉스, 립...</p>
+            </a>
+        </article>
+        <article class="news">  
+            <div>
+                <a href="">'국제수사' 믿고 보는 손현주&조재윤 특별출연, 코믹 영..
+                <a href="">박성광, 개그맨? '끈'으로 보여준 '영화감독'의 품격</a>
+                <a href="">'존윅 5' 제작 확정... 키아누 리브스, 내년 '존윅' 4월 개.. </a>
+                <a href="">소년의 맹목적인 믿음의 결과, 소년 아메드. 현재의 생..</a>
+                <a href="">'아쿠아맨' 제임스 완 '전격 Z 작전' 제작, "데이비드 핫셀..</a>
+            </div>
+        </article>
+        <article class="news">
+            <a href="">
+                <img src="/img/news03.png" alt="NEWS_03">
+                <p>곧 부부로 만난다는 국민<br>남사친, 여사cls 두스타</p>
+            </a>
+        </article>
+        <article class="news">            
+            <a href="">
+                <img src="/img/news04.png" alt="NEWS_04">
+                <p>영원히 고통받는 호크아<br>이, 스타</p>
+            </a>
+        </article>
+        <article class="news">  
+            <div>
+                <a href="">"10년 품었던 이야기"... '다만 악에서' 이제야 나온 까닭..</a>
+                <a href="">'아저씨' 美 리메이크, '존윅' 연출가 각본가 참여하여 진.. </a>
+                <a href="">日 애니 '귀멸의 칼날' 극장판, 12월 韓 개봉 "청불 아니다"</a>
+                <a href="">900톤 쌓인 장어 소비자에게로... 백종원의 영향력</a>
+                <a href="">니아 다코스타 '캡틴마블2' 연출 확정, "마블 최초 여성..</a>
+            </div>
+        </article>
+        <article class="news">                   
+            <a href="">
+                <img src="/img/news05.png" alt="NEWS_05">
+                <p>당위성을 갖지 못한 신파<br>반도</p>
+            </a>
+        </article>
+        <article class="news">                   
+            <a href="">
+                <img src="/img/news06.png" alt="NEWS_06">
+                <p>러블리 싹 지우고 6년 만<br>에 돌아온 여신미모...</p>
+            </a>
+        </article>
+        <article class="news">                   
+            <a href="">
+                <img src="/img/news07.png" alt="NEWS_07">
+                <p>'다만 악에서 구하소서' 신<br>세계2? 여기 '부라...</p>
+            </a>
+        </article>
+        <article class="news">                   
+            <a href="">
+                <img src="/img/news08.png" alt="NEWS_08">
+                <p>새로운 인어의 전설이 시<br>작된다 '인어공주: 매직...</p>
+            </a>
+        </article>
+    </section>
 
     <footer>
 

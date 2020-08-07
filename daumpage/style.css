@@ -23,6 +23,10 @@ aside {
     margin: 10px 150px;
     width: 380px;
 }
+#section02 {
+    position: absolute;
+    top: 345px;
+}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 #start_page {
@@ -75,7 +79,7 @@ aside {
 .bottom_search li a {
     text-decoration: none;
     font-size: 12px;
-    color: gray;
+    color: rgb(80, 80, 80);
 }
 .bottom_search li a:hover {
     text-decoration: underline;
@@ -83,14 +87,20 @@ aside {
 
 #slide {
     position: relative;
-    top: 13px;
+    top: 12px;
     left: 600px;
     user-select: none;
 }
+.sli.prev {
+    position: relative;
+    left: 6.5px;
+}
+
 .prev, .next {
     cursor: pointer;
     color: silver;
 }
+
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 #hr1 {
@@ -200,12 +210,8 @@ aside {
     z-index: 1;
     background-color: white;
 }
-.navbar.hidden table {
-    border-collapse : collapse;
-}
 .navbar.hidden table td{
     width: 110px;
-    border: 1px solid rgb(235, 235, 235);
 }
 .navbar.hidden ul {
     position: absolute;
@@ -220,14 +226,15 @@ aside {
     
 }
 .navbar.hidden ul li a {
-    color: rgb(0, 0, 0);
+    color: rgb(50, 50, 50);
     text-decoration: none;
 }
 .navbar.hidden ul li a:visited {
     text-decoration: none;
 }
 .navbar.hidden ul li a:hover {
-    text-decoration: none;
+    text-decoration: underline;
+    color: rgb(0, 153, 255);
 }
 
 .nb_exit.a {
@@ -325,7 +332,7 @@ aside {
     top: -21px;
     left: 16px;
     background-color: rgb(245, 245, 245);
-    border-radius: 3px;
+    border-radius: 2px;
     border: 1px solid rgb(235, 235, 235);
     width: 260px;
     height: 120px;
@@ -369,26 +376,26 @@ aside {
     text-decoration: underline;
 }
 
-#side_ad {
+.side_ad {
     border: 1px solid rgb(235, 235, 235);
     position: relative;
     left: 16px;
     width: 260px;
     height: 150px;
 }
-#side_ad img {
+.side_ad img {
     position: absolute;
-    top: 15px;
+    top: 21px;
     left: 15px;
-    width: 100px;
-    height: 120px;
+    width: 105px;
+    height: 105px;
 }
-#side_ad p {
+.side_ad p {
     position: relative;
     top: 14px;
     left: 133px;
 }
-#itm {
+.itm {
     z-index: 1;
     position: absolute;
     top: 12px;
@@ -396,19 +403,167 @@ aside {
     width: 230px;
     height: 120px;
 }
-#item_t {
+.item_t {
     font-size: 12px;
 }
-#item_o {
+.item_o {
     margin-top: -5px;
     font-size: 10px;
-    text-decoration:line-through
+    text-decoration: line-through
 }
-#item_h {
+.item_h {
     margin-top: -9px;
     font-size: 13px;
 }
-#item_j {
+.item_j {
     margin-top: -5px;
     font-size: 11px;
+}
+
+.side_ad2 {
+    border: 1px solid rgb(235, 235, 235);
+    position: relative;
+    top: 20px;
+    left: 16px;
+    width: 260px;
+    height: 507px;
+}
+#shopping {
+    text-decoration: none;
+    color: black;
+    font-size: 13.5px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+.shopping2 {
+    text-decoration: none;
+    color: black;
+    font-size: 13.5px;
+    font-weight: bold;
+    position: relative;
+    top: 6px;
+    left: 68px;
+    padding-left: 10px;
+}
+#sp1 {
+    color: rgb(51, 185, 107);
+}
+#sp2 {
+    color: rgb(252, 84, 84);
+}
+.brand {
+    position: relative;
+    top: 35px;
+    left: 14px;
+    margin-top: -15px;
+}
+.brand a{
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+}
+#brand_num {
+    position: relative;
+    top: 25px;
+    left: 180px;
+    font-size: 14px;
+}
+.slibrand {
+    position: relative;
+    top: 2px;
+}
+.slibrand.prev{
+    position: relative;
+    left: 6px;
+    font-size: 20px;
+}
+.slibrand.next{
+    font-size: 20px;
+}
+.brand_img {
+    display: inline-block;
+    padding-right: 4px;;
+    position: relative;
+    top: 25px;
+    left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 9.5px;
+}
+.brand_img:hover {
+    text-decoration: underline;
+    color: rgb(0, 153, 255);
+}
+.brand_img img {
+    width: 70px;
+    height: 80px;
+}
+.brand_img p {
+    margin-top: 0px;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.slinews {
+    position: relative;
+    top: 2px;
+    left: 8px;
+}
+.slinews.prev{
+    position: relative;
+    left: 15px;
+    font-size: 23px;
+}
+.slinews.next{
+    font-size: 23px;
+}
+#news_num {
+    position: absolute;
+    top: -6px;
+    right: 21px;
+}
+#section02 ul {
+    margin-left: -48px;
+}
+#section02 ul li{
+    display: inline;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#section02 ul li a{
+    text-decoration: none;
+    color: black;
+}
+#section02 ul li a:visited {
+    text-decoration: none;
+}
+#section02 ul li a:hover {
+    text-decoration: none;
+}
+
+.news {
+    display: inline-block;
+}
+.news img {
+    width: 140px;
+    height: 90px;
+    padding-right: 15px;
+}
+.news div {
+    position: relative;
+    top: -15px;
+    left: 3px;
+}
+.news a {
+    font-size: 12px;
+    display: block;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+.news p {
+    position: relative;
+    top: -10px;
 }

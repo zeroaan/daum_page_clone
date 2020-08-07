@@ -25,7 +25,7 @@ function autoSlides() {
      slides[i].style.display = "none";  
   }
   slides[slideIndex-1].style.display = "block";  
-  setTimeout(autoSlides, 3900);
+  setTimeout(autoSlides, 4500);
 }
 
 // 날씨 자동 슬라이드
@@ -39,7 +39,7 @@ function autoSlides2() {
      slides[i].style.display = "none";  
   }
   slides[slideIndex2-1].style.display = "block";  
-  setTimeout(autoSlides2, 2700);
+  setTimeout(autoSlides2, 3100);
 }
 
 // 광고 자동 슬라이드
@@ -53,5 +53,19 @@ function autoSlides3() {
      slides[i].style.display = "none";  
   }
   slides[slideIndex3-1].style.display = "block";  
-  setTimeout(autoSlides3, 4800);
+  setTimeout(autoSlides3, 6900);
+}
+
+// 사이드 광고 자동 슬라이드
+let slideIndex4 = 0;
+autoSlides4();
+function autoSlides4() {
+  let slides = document.getElementsByClassName("side_ad");
+  slideIndex4++;
+  if (slideIndex4 > slides.length) {slideIndex4 = 1}
+  for (let i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";  
+  }
+  slides[slideIndex4-1].style.display = "block";  
+  setTimeout(autoSlides4, 10500);
 }
