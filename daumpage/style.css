@@ -319,6 +319,7 @@ aside {
     height: 120px;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ */
 #log {
     position: relative;
     top: -21px;
@@ -366,4 +367,48 @@ aside {
 }
 #signup:hover {
     text-decoration: underline;
+}
+
+#side_ad {
+    border: 1px solid rgb(235, 235, 235);
+    position: relative;
+    left: 16px;
+    width: 260px;
+    height: 150px;
+}
+#side_ad img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100px;
+    height: 120px;
+}
+#side_ad p {
+    position: relative;
+    top: 14px;
+    left: 133px;
+}
+#itm {
+    z-index: 1;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 230px;
+    height: 120px;
+}
+#item_t {
+    font-size: 12px;
+}
+#item_o {
+    margin-top: -5px;
+    font-size: 10px;
+    text-decoration:line-through
+}
+#item_h {
+    margin-top: -9px;
+    font-size: 13px;
+}
+#item_j {
+    margin-top: -5px;
+    font-size: 11px;
 }
