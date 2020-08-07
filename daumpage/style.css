@@ -10,7 +10,12 @@ nav {
     margin: 10px 150px;
     padding-left: 130px;
 }
+section {
+    position: relative;
+    margin: 10px 150px;
+    padding-left: 130px;
 
+}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 #start_page {
@@ -253,6 +258,7 @@ nav {
     position: relative;
     left: 40px;
     font-size: 60px;
+    color: rgb(153, 153, 153);
 }
 #wt_tem {
     position: absolute;
@@ -273,4 +279,66 @@ nav {
 }
 #air p{
     margin-left: 10px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@ */
+
+.adver {
+    position: relative;
+    top: -20px;
+    width: 630px;
+    height: 120px;
+}
+.adver img {
+    width: 630px;
+    height: 120px;
+}
+
+#log {
+    position: absolute;
+    top: -20px;
+    right: 150px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+    border: 1px solid rgb(235, 235, 235);
+    width: 260px;
+    height: 120px;
+}
+.login {
+    position: relative;
+    top: 12px;
+    left: 13px;
+    width: 230px;
+    height: 25px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: black;
+    display: block;
+    text-align: center;
+    padding-top: 9px;
+}
+.login.daum {
+    background-color: white;
+    border: 1px solid rgb(235, 235, 235);
+    text-decoration: none;
+}
+.login.kakao {
+    background-color: rgb(255, 238, 0);
+    border: 1px solid rgb(235, 235, 235);
+    text-decoration: none;
+}
+#signup {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-weight: bold;
+    color: black;
+    font-size: 10px;
+    text-decoration: none;
+}
+#signup:visited {
+    text-decoration: none;
+}
+#signup:hover {
+    text-decoration: underline;
 }
