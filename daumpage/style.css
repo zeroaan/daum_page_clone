@@ -14,7 +14,7 @@ section {
     position: relative;
     margin: 10px 150px;
     padding-left: 130px;
-    margin-right: 590px;
+    width: 643px;
 }
 aside {
     position: relative;
@@ -26,6 +26,16 @@ aside {
 #section02 {
     position: absolute;
     top: 345px;
+}
+#section03 {
+    position: absolute;
+    top: 860px;
+}
+footer {
+    position: relative;
+    margin: 10px 150px;
+    padding-left: 130px;
+    
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -121,7 +131,7 @@ aside {
 }
 #hr2 {
     position: relative;
-    top: -33px;
+    top: -34px;
     background-color: rgb(150, 150, 150);
     height: 1px;
     border: 0px;
@@ -243,7 +253,7 @@ aside {
 }
 .navbar.hidden ul li a:hover {
     text-decoration: underline;
-    color: rgb(0, 153, 255);
+    color: #0099FF;
 }
 
 .nb_exit.a {
@@ -456,6 +466,14 @@ aside {
     left: 68px;
     padding-left: 10px;
 }
+.shopping2:visited {
+    text-decoration: none;
+    color: black;
+}
+.shopping2:hover {
+    text-decoration: underline;
+    color: #0099FF;
+}
 #sp1 {
     color: rgb(51, 185, 107);
 }
@@ -473,24 +491,40 @@ aside {
     color: black;
     font-size: 11px;
 }
+.brand a:visited{
+    text-decoration: none;
+    color: black;
+}
+.brand a:hover {
+    text-decoration: underline;
+    color: #0099FF;
+}
+
 #brand_num {
     position: relative;
     top: 25px;
-    left: 180px;
-    font-size: 14px;
+    left: 186px;
+    font-size: 13px;
+    user-select: none;
 }
 .slibrand {
-    position: relative;
-    top: 2px;
+    border: 0.5px solid rgb(220, 220, 220);
+    font-size: 9px;
+    font-weight: bold;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    text-align: center;
 }
 .slibrand.prev{
     position: relative;
-    left: 6px;
-    font-size: 20px;
+    left: 5.8px;
 }
-.slibrand.next{
-    font-size: 20px;
+.slibrand.prev, .slibrand.next{
+    cursor: pointer;
+    color: rgb(125, 125, 125);
 }
+
 .brand_img {
     display: inline-block;
     padding-right: 4px;;
@@ -501,9 +535,13 @@ aside {
     color: black;
     font-size: 9.5px;
 }
+.brand_img:visited {
+    text-decoration: none;
+    color: black;
+}
 .brand_img:hover {
     text-decoration: underline;
-    color: rgb(0, 153, 255);
+    color: #0099FF;
 }
 .brand_img img {
     width: 70px;
@@ -514,24 +552,33 @@ aside {
 }
 /* @@@@@@@@@@@@@@@@@@@@@@@@ */
 
-.slinews {
-    position: relative;
-    top: 2px;
-    left: 8px;
-}
-.slinews.prev{
-    position: relative;
-    left: 15px;
-    font-size: 23px;
-}
-.slinews.next{
-    font-size: 23px;
-}
 #news_num {
     position: absolute;
-    top: -6px;
-    right: 21px;
+    top: 5px;
+    right: 15px;
+    font-size: 15px;
+    user-select: none;
 }
+.slinews {
+    position: relative;
+    top: -2px;
+    border: 0.5px solid rgb(220, 220, 220);
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+}
+.slinews.prev {
+    position: relative;
+    left: 6px;
+}
+.slinews.prev, .slinews.next {
+    cursor: pointer;
+    color: rgb(125, 125, 125);
+}
+
 #section02 ul {
     margin-left: -48px;
 }
@@ -572,7 +619,156 @@ aside {
     text-decoration: none;
     color: black;
 }
+.news a:visited {
+    text-decoration: none;
+    color: black;
+}
+.news a:hover {
+    text-decoration: underline;
+    color: #0099FF;
+}
 .news p {
     position: relative;
     top: -10px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#section03 {
+    border: 1px solid rgb(235, 235, 235);
+    margin-left: 280px;
+    width: 500px;
+    height: 185px;
+}
+#title_best {
+    position: absolute;
+    left: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+#section03 img {
+    position: relative;
+    top: 50px;
+    left: -115px;
+    width: 160px;
+}
+.best {
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 128px;
+    left: 25px;
+    display: inline-block;
+    font-size: 13px;
+    width: 148px;
+    text-decoration: none;
+}
+.best:hover {
+    text-decoration: underline;
+}
+.best.b {
+    margin-left: 165px;
+}
+
+.bestnum {
+    z-index: 1;
+    background-color: rgb(150, 150, 150);
+    text-align: center;
+    font-size: 12px;
+    width: 15px;
+    color: white;
+    position: absolute;
+    top: 38px;
+    left: 15px;
+}
+.bestnum.b {
+    position: absolute;
+    top: 38.5px;
+    left: 15.5px;
+    margin-left: 165px;
+}
+
+#bestnumber {
+    width: 15px;
+    position: absolute;
+    top: 39px;
+    left: 365px;
+
+}
+#bestnumber p {
+    background-color: rgb(150, 150, 150);
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    margin-bottom: -3px;
+}
+
+#besttext {
+    position: absolute;
+    top: 40px;
+    right: 42px;
+    font-size: 12px;
+}
+#besttext p {
+    margin-bottom: -3.4px;
+}
+#besttext a {
+    text-decoration: none;
+    color: black;
+}
+#besttext a:visited {
+    text-decoration: none;
+    color: black;
+}
+#besttext a:hover {
+    text-decoration: underline;
+    color: #0099FF;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#hr3 {
+    position: relative;
+    top: -80px;
+    background-color: rgb(150, 150, 150);
+    height: 1px;
+    border: 0px;
+}
+
+#logo2 img{
+    position: absolute;
+    top: -70px;
+    left: 110px;
+    width: 100px;
+}
+footer p {
+    position: relative;
+    top: -10px;
+    left: 5px;
+    font-size: 11px;
+    color: rgb(120, 120, 120);
+}
+#ser {
+    position: absolute;
+    top: -65px;
+    left: 940px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.fot.b {
+    position: relative;
+    top: -17px;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+}
+footer a:visited {
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+}
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(120, 120, 120);
 }
