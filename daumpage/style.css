@@ -663,6 +663,9 @@ footer {
     width: 148px;
     text-decoration: none;
 }
+.best:visited {
+    text-decoration: none;
+}
 .best:hover {
     text-decoration: underline;
 }

@@ -19,12 +19,12 @@ function showSlides(n) {
 // 자동 슬라이드
 function autoSlides() {
   let slides = document.getElementsByClassName("bottom_search");
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
+  if (slideIndex == slides.length) {slideIndex = 0}
   for (let i = 0; i < slides.length; i++) {
      slides[i].style.display = "none";  
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex].style.display = "block";  
+  slideIndex++;
   setTimeout(autoSlides, 4500);
 }
 
@@ -33,12 +33,12 @@ let slideIndex2 = 0;
 autoSlides2();
 function autoSlides2() {
   let slides = document.getElementsByClassName("tem");
-  slideIndex2++;
-  if (slideIndex2 > slides.length) {slideIndex2 = 1}
+  if (slideIndex2 == slides.length) {slideIndex2 = 0}
   for (let i = 0; i < slides.length; i++) {
      slides[i].style.display = "none";  
   }
-  slides[slideIndex2-1].style.display = "block";  
+  slides[slideIndex2].style.display = "block";  
+  slideIndex2++;
   setTimeout(autoSlides2, 3100);
 }
 
@@ -47,12 +47,12 @@ let slideIndex3 = 0;
 autoSlides3();
 function autoSlides3() {
   let slides = document.getElementsByClassName("adver");
-  slideIndex3++;
-  if (slideIndex3 > slides.length) {slideIndex3 = 1}
+  if (slideIndex3 == slides.length) {slideIndex3 = 0}
   for (let i = 0; i < slides.length; i++) {
      slides[i].style.display = "none";  
   }
-  slides[slideIndex3-1].style.display = "block";  
+  slides[slideIndex3].style.display = "block";  
+  slideIndex3++;
   setTimeout(autoSlides3, 6900);
 }
 
@@ -61,11 +61,11 @@ let slideIndex4 = 0;
 autoSlides4();
 function autoSlides4() {
   let slides = document.getElementsByClassName("side_ad");
-  slideIndex4++;
-  if (slideIndex4 > slides.length) {slideIndex4 = 1}
+  if (slideIndex4 == slides.length) {slideIndex4 = 0}
   for (let i = 0; i < slides.length; i++) {
      slides[i].style.display = "none";  
   }
-  slides[slideIndex4-1].style.display = "block";  
+  slides[slideIndex4].style.display = "block";  
+  slideIndex4++;
   setTimeout(autoSlides4, 10500);
 }
