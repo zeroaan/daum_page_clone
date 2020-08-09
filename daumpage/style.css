@@ -648,12 +648,11 @@ footer {
 }
 #section03 img {
     position: relative;
-    top: 50px;
-    left: -115px;
+    top: -78px;
+    left: -10px;
     width: 160px;
 }
 .best {
-    z-index: 1;
     color: white;
     font-weight: bold;
     position: absolute;
@@ -670,6 +669,10 @@ footer {
 .best.b {
     margin-left: 165px;
 }
+.best p {
+    position: relative;
+    top: -137px;
+}
 
 .bestnum {
     z-index: 1;
@@ -684,7 +687,7 @@ footer {
 }
 .bestnum.b {
     position: absolute;
-    top: 38.5px;
+    top: 38px;
     left: 15.5px;
     margin-left: 165px;
 }
